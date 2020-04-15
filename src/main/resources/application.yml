@@ -8,7 +8,7 @@ spring:
                     minPartitionCount: 3
                     autoCreateTopics: true
             binders:
-                messageOutput:
-                    destination: dev.message # topic name env.scheme.action
+                messagingOutput:
+                    destination: dev.messaging-topic # topic name env.scheme.action
 server:
     port: 8080
