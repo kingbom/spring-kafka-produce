@@ -1,0 +1,14 @@
+spring:
+    cloud:
+        stream:
+            kafka:
+                binder:
+                    brokers: localhost
+                    zk-nodes: localhost
+                    minPartitionCount: 3
+                    autoCreateTopics: true
+            binders:
+                messageOutput:
+                    destination: dev.message # topic name env.scheme.action
+server:
+    port: 8080
